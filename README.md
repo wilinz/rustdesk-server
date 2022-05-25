@@ -23,7 +23,7 @@ input:
 [target.armv7-unknown-linux-gnueabihf]
 linker = "arm-linux-gnueabihf-gcc"
 
-#cargo build --release --target=armv7-unknown-linux-gnueabihf
+# cargo build --release --target=armv7-unknown-linux-gnueabihf
 ```
 
 Two executables will be generated in target/release.
