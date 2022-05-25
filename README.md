@@ -10,6 +10,20 @@ Self-host your own RustDesk server, it is free and open source.
 
 ```
 cargo build --release
+
+ubuntu 20.04 LTS
+
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+# source $HOME/.cargo/env
+# apt install gcc-arm-linux-gnueabihf
+# rustup target add armv7-unknown-linux-gnueabihf
+# vim ~/.cargo/config
+
+input:
+[target.armv7-unknown-linux-gnueabihf]
+linker = "arm-linux-gnueabihf-gcc"
+
+#cargo build --release --target=armv7-unknown-linux-gnueabihf
 ```
 
 Two executables will be generated in target/release.
